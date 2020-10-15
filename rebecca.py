@@ -16,8 +16,9 @@ limit = 75
 memory = "Friend: Hi!\nRebecca: Hi how are you?\nFriend: Fine, you?\nRebecca: It feels great to be alive\n"
 prefix = ""
 
+#Loads a pretrained model by default, though you can change  the model
 print("Model loading...")
-#tokenizer = GPT2Tokenizer.from_pretrained("/content/drive/My Drive/Training Data/Model")
+#tokenizer = GPT2Tokenizer.from_pretrained("by putting a path to it here")
 tokenizer = GPT2Tokenizer.from_pretrained("gpt2-xl")
 # add the EOS token as PAD token to avoid warnings
 model = GPT2LMHeadModel.from_pretrained("gpt2-xl")
